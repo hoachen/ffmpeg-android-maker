@@ -152,12 +152,13 @@ DEP_LD_FLAGS="-L${BUILD_DIR_EXTERNAL}/${ANDROID_ABI}/lib $FFMPEG_EXTRA_LD_FLAGS"
   --enable-bsf=hevc_mp4toannexb\
   --enable-bsf=av1_metadata\
   --disable-protocols\
- --enable-protocol=async\
- --enable-protocol=hls\
+  --enable-protocol=async\
+  --enable-protocol=hls\
   --enable-protocol=http\
   --enable-protocol=file\
   --enable-protocol=tcp\
-#  --enable-protocol=udp\
+  --enable-protocol=udp\
+  --enable-protocol=pipe\
   --enable-protocol=crypto\
   --enable-protocol=rtmp\
   --disable-devices\
